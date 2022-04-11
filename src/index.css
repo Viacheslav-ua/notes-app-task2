@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+}
+
+.active {
+    color:rgb(58, 58, 250);
+    cursor: default;
+}
