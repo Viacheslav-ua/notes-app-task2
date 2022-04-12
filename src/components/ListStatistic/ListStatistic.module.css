@@ -1,0 +1,31 @@
+.tableRow {
+  height: 45px;
+  background-color: #ddd
+}
+
+.tableRow:nth-child(2n) {
+  background-color: #ddf;
+}
+
+
+.tableRow:hover {
+  background-color: #ccc;
+}
+
+.cellCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  
+}

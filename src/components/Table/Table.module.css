@@ -3,3 +3,10 @@
   border-spacing: 0 10px;
   text-align: left;
 }
+
+.tableHeader {
+  background-color: #aaa;
+  height: 45px;
+  border-radius: 4px;
+  color: white;
+}

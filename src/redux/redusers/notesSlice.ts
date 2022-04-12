@@ -7,15 +7,13 @@ import categoryStatic from '../../json/category.json'
 interface NotesState {
   notes: INote[];
   category: ICategory[];
-  isLoading: Boolean;
-  error: string;
+  viewArchive: boolean;
 }
 
 const initialState: NotesState = {
   notes: [...notesStatic],
   category: [...categoryStatic],
-  isLoading: false,
-  error: "",
+  viewArchive: false,
 }
 
 export const notesSlice = createSlice({

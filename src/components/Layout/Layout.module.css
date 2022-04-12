@@ -1,7 +1,7 @@
 .link {
-    margin-left: 30px;
-    font-weight: 600;
-    font-size: 18px;
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -12,25 +12,24 @@
 } */
 
 .header {
-  background-color: rgb(168, 168, 176);
+  background-color:gold;
   height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
    
 }
 
 .container {
-    padding: 20px;
+  padding: 0 50px;
 }
 
 .notes {
-  height: 500px;
-  margin-bottom: 50px;
+  height: 450px;
+  margin-bottom: 30px;
   text-align: right;
   overflow-y: auto;
-  background-color: bisque;
 }
 
 /* ------------------------------ */
@@ -42,13 +41,18 @@
 
 .tableHeader {
   background-color: #aaa;
-  height: 40px;
+  height: 45px;
   border-radius: 4px;
   color: white;
 }
 
-.cellIcon {
+/* .cellIcon {
   width: 50px;
+} */
+
+/* .tableRow {
+  height: 45px;
+  background-color: #ddd
 }
 
 .tableRow:nth-child(2n) {
@@ -58,7 +62,7 @@
 
 .tableRow:hover {
   background-color: #ccc;
-}
+} */
 
 .tableRow.edit {
   background-color: rgb(190, 243, 195);
@@ -71,20 +75,21 @@
   background-color: rgb(150, 240, 158);
 }
 
-.cellCenter {
+/* .cellCenter {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .circleIcon {
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background-color: #777;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3px;
-}
+  margin-top: 4px;
+  
+} */
 
