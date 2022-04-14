@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom"
 import style from "./Layout.module.css"
 
-import RowStatistic from "../ListStatistic";
+import ListStatistic from "../ListStatistic";
 import HeadStatistic from "../HeadStatistic";
 
 const Layout: React.FC = () => { 
@@ -19,13 +19,10 @@ const Layout: React.FC = () => {
       <div>
       <table className={style.table}>
       <caption>Note Category Summary</caption>
-      <thead className={style.tableHeader}>
         <HeadStatistic />
-      </thead>
       <tbody>
-        <RowStatistic />
-        <RowStatistic />
-    </tbody>
+        <ListStatistic />
+      </tbody>
   </table>
       </div>
       </main>

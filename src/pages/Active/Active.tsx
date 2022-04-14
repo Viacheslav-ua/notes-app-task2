@@ -1,20 +1,26 @@
-import Fab from '@mui/material/Fab'
 import Table from "../../components/Table"
 import HeadNote from "../../components/HeadNote"
 import ListNote from "../../components/ListNote"
 import style from './Active.module.css'
 
-const ActiveNotes: React.FC = () => { 
+import { useAppDispatch } from '../../hooks/redux'
+import { notesSlice } from '../../redux/redusers/notesSlice'
+import { useAppSelector } from '../../hooks/redux'
+
+const ActiveNotes: React.FC = () => {
+  const { isDisabledBtn } = useAppSelector(state => state.notesReducer)
+  const { createNote } = notesSlice.actions
+  const dispatch = useAppDispatch()
   return (
     <>
-    <Table>
-      <HeadNote />
-      <ListNote />
-    </Table>
-      <Fab className={style.fabAdd} variant="extended" size="medium" color="primary" aria-label="add">
-        {/* <NavigationIcon sx={{ mr: 1 }} /> */}
+      <Table>
+        <HeadNote />
+        <ListNote />
+      </Table>
+      <button disabled={isDisabledBtn} className={style.btnCreate}
+        onClick={() => dispatch(createNote())}>
         Create Note
-      </Fab>
+      </button> 
     </>
   )
 }

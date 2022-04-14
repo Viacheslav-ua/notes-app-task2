@@ -1,6 +1,7 @@
+import { notesSlice } from '../../redux/redusers/notesSlice'
+import { useAppDispatch } from '../../hooks/redux'
 import { grey } from '@mui/material/colors'
 import Icon from '@mui/material/Icon'
-import Fab from '@mui/material/Fab'
 import { INote } from '../../interfaces/INote'
 import style from './RowNotes.module.css'
 
@@ -9,32 +10,37 @@ type PropsType =  {
 }
 
 const RowNotes: React.FC<PropsType> = ({ itemNote }) => { 
+  const { editNote, toggleArchive, removeNote } = notesSlice.actions
+  const dispatch = useAppDispatch()
+
+
   return (
-    <tr className={style.tableRow}>
+    <tr key={itemNote.id} className={style.tableRow}>
         <td className={style.cellCenter}>
           <div className={style.circleIcon}>
           <Icon sx={{ color: grey[50] }}>{ itemNote.categoryKey }</Icon>
           </div>
         </td>
-        <td>sfgsfeg</td>
-        <td>4/3/2022</td>
-        <td>Idea</td>
-        <td>ftghj rtjety</td>
-        <td>5/3/2022</td>
-        <td>
-          <Fab className={style.fabRow} size="small" color="primary" aria-label="edit">
+        <td>{ itemNote.name }</td>
+        <td>{ itemNote.created }</td>
+        <td>{ itemNote.category }</td>
+        <td>{ itemNote.content }</td>
+        <td>{ itemNote.dates.join(', ') }</td>
+      <td>
+        {!itemNote.isArchive &&
+          <div className={style.circleBtn} onClick={() => dispatch(editNote(itemNote.id))}>
             <Icon sx={{ color: grey[50] }}>mode_edit</Icon>
-          </Fab>
+          </div>}
         </td>
       <td>
-        <Fab className={style.fabRow} size="small" color="primary" aria-label="edit">
+        <div className={style.circleBtn} onClick={() => dispatch(toggleArchive(itemNote.id))}>
           <Icon sx={{ color: grey[50] }}>archive</Icon>
-        </Fab>  
+        </div>  
         </td>
       <td>
-        <Fab className={style.fabRow} size="small" color="primary" aria-label="edit">
+        <div className={style.circleBtn} onClick={() => dispatch(removeNote(itemNote.id))}>
           <Icon sx={{ color: grey[50] }}>delete</Icon>
-        </Fab>  
+        </div>  
         </td>
       </tr>
   )

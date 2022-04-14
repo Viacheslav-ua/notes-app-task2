@@ -28,10 +28,23 @@
   
 }
 
-.fabRow {
+.circleBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
   background-color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 4px; */
+  cursor: pointer;
+}
+
+
+.circleBtn:hover {
+  background-color:royalblue;
   width: 36px;
-  height: 30px;
+  height: 36px;
 }
 
 .inputContent {

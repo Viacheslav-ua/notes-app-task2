@@ -1,6 +1,14 @@
-const ArchiveNotes: React.FC = () => { 
+import Table from "../../components/Table"
+import HeadNote from "../../components/HeadNote"
+import ListArchive from "../../components/ListArchive"
+
+const ArchiveNotes: React.FC = () => {
   return (
-    <><h1>Archive</h1></>
+    <Table>
+      <HeadNote />
+      <ListArchive />
+    </Table>
   )
 }
+
 export default ArchiveNotes
