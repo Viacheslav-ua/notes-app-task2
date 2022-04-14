@@ -1,0 +1,89 @@
+.link {
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* .navMenu {
+    display: flex;
+    align-items: center;
+
+} */
+
+.header {
+  background-color:gold;
+  height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+
+.container {
+  padding: 0 50px;
+}
+
+.notes {
+  height: 450px;
+  margin-bottom: 30px;
+  text-align: right;
+  overflow-y: auto;
+}
+
+/* ------------------------------ */
+.table {
+  width: 100%;
+  border-spacing: 0 10px;
+  text-align: left;
+}
+
+
+/* .cellIcon {
+  width: 50px;
+} */
+
+/* .tableRow {
+  height: 45px;
+  background-color: #ddd
+}
+
+.tableRow:nth-child(2n) {
+  background-color: #ddf;
+}
+
+
+.tableRow:hover {
+  background-color: #ccc;
+} */
+
+.tableRow.edit {
+  background-color: rgb(190, 243, 195);
+  transition-property: background-color;
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.edit:hover {
+  background-color: rgb(150, 240, 158);
+}
+
+/* .cellCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  
+} */
+

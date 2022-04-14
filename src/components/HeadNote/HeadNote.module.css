@@ -1,0 +1,26 @@
+.tableHeader {
+  background-color: #aaa;
+  height: 40px;
+  border-radius: 4px;
+  color: white;
+}
+
+.cellIcon {
+  width: 50px;
+}
+
+.cellName {
+  width: 250px;
+}
+
+.cellCreated {
+  width: 80px;
+}
+
+.cellCategory {
+  width: 140px;
+}
+
+.cellContent {
+  width: 350px;
+}

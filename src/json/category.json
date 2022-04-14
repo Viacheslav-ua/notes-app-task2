@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "value": "shopping_cart",
+    "desc": "Task"
+  },
+  {
+    "id": "2",
+    "value": "psychology",
+    "desc": "Random Thought"
+  },
+  {
+    "id": "3",
+    "value": "lightbulb",
+    "desc": "Idea"
+  },
+  {
+    "id": "4",
+    "value": "format_quote",
+    "desc": "Quote"
+  }
+]

@@ -1,0 +1,10 @@
+.tableHeader {
+  background-color: #aaa;
+  height: 45px;
+  border-radius: 4px;
+  color: white;
+}
+
+.cellIcon {
+  width: 50px;
+}
